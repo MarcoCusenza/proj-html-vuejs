@@ -1,10 +1,20 @@
 <template>
-  <header>HEADER</header>
+  <header>
+    <HeaderTop />
+    <HeaderBot />
+  </header>
 </template>
 
 <script>
+import HeaderTop from "../sections/HeaderTop.vue";
+import HeaderBot from "../sections/HeaderBot.vue";
+
 export default {
   name: "Header",
+  components:{
+    HeaderTop,
+    HeaderBot,
+  }
 };
 </script>
 
