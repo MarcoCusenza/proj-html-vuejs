@@ -1,5 +1,7 @@
 <template>
-  <main>MAIN</main>
+  <main>
+    <div class="container">MAIN</div>
+  </main>
 </template>
 
 <script>
@@ -9,5 +11,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/style/partials/variables.scss';
+@import "../../assets/style/partials/variables.scss";
 </style>

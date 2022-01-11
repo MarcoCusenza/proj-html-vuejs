@@ -23,4 +23,7 @@ export default {
 
 <style lang="scss">
 @import "./assets/style/global.scss";
+#app {
+  font-family: "Montserrat", sans-serif;
+}
 </style>
