@@ -48,8 +48,8 @@ export default {
 .header-top {
   background-color: $bg-dark;
   color: $text-light-low-contrast;
-  font-size: 14px;
-  padding: 10px 0;
+  font-size: .8125rem;
+  padding: 15px 0;
 
   .container {
     display: flex;
