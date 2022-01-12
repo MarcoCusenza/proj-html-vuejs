@@ -34,7 +34,9 @@ export default {
     return {
       titleData: {
         titleHeader: "about the network",
-        title: "The Company",
+        hbefore: "The",
+        title: "Company",
+        hafter: "",
         subtitle:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, fuga atque dignissimos hic non illum ducimus totam praesentium voluptate magni molestiae impedit ex labore maiores amet alias quasi nobis sapiente?",
       },

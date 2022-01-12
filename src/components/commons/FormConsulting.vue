@@ -15,8 +15,8 @@
           <option value="4">Info 4</option>
         </select>
       </div>
-      <button>get in touch</button>
-      <button>read more</button>
+      <button class="but but-full">get in touch</button>
+      <button class="but but-empty">read more</button>
     </form>
   </div>
 </template>
@@ -29,6 +29,9 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../assets/style/partials/variables.scss";
+@import "../../assets/style/mixins/mixin.scss";
+
+@include button;
 
 form {
   .inputs {
@@ -82,28 +85,8 @@ form {
     }
   }
   button {
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-family: inherit;
-    border: none;
-    border-radius: 4px;
-    font-weight: 600;
-    border: 1px solid $primary;
-    cursor: pointer;
-
     &:first-of-type {
-      background-color: $primary;
-      color: $text-light;
       margin-right: 15px;
-
-      &:hover {
-        background-color: $primary-hover;
-        border-color: $primary-hover;
-      }
-    }
-
-    &:last-of-type {
-      color: $primary;
     }
   }
 }

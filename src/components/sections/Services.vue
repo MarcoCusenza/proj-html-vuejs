@@ -1,26 +1,35 @@
 <template>
-  <div class="company dark-section">
+  <div class="services light-section">
     <div class="container">
-      <Title :obj="titleData" />
+      <SectionTitle class="title" :obj="titleData" />
+      <div class="top clearfix">
+        <span class="floatleft">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, fuga
+          atque dignissimos hic non illum ducimus totam praesentium ex labore
+          maiores amet alias quasi nobis sapiente?</span
+        >
+        <button class="but but-full floatright">see all</button>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import Title from "../commons/SectionTitle.vue";
+import SectionTitle from "../commons/SectionTitle.vue";
 
 export default {
   name: "Services",
   components: {
-    Title,
+    SectionTitle,
   },
   data() {
     return {
       titleData: {
         titleHeader: "our business areas",
-        title: "Excellence in Services",
-        subtitle:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, fuga atque dignissimos hic non illum ducimus totam praesentium voluptate magni molestiae impedit ex labore maiores amet alias quasi nobis sapiente?",
+        hbefore: "",
+        title: "Excellence in",
+        hafter: "Services",
+        subtitle: "",
       },
     };
   },
@@ -29,4 +38,22 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../assets/style/partials/variables.scss";
+@import "../../assets/style/mixins/mixin.scss";
+
+@include button;
+@include cardServices;
+
+.services {
+  background-color: $bg-lightgreen;
+  padding: 140px 0;
+
+  .container {
+    .top {
+      width: 100%;
+      span {
+        width: 85%;
+      }
+    }
+  }
+}
 </style>
