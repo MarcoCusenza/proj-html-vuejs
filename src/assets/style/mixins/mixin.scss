@@ -1,0 +1,26 @@
+@mixin cardCompany {
+  .card-company {
+    margin-top: 40px;
+
+    .title {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        color: $primary-light;
+        transform: scale(1.3);
+      }
+
+      h3 {
+        color: $text-light;
+        margin-left: 12px;
+      }
+    }
+
+    .subtitle {
+      font-size: 0.875rem;
+      color: $text-light-low-contrast;
+      margin-top: 20px;
+    }
+  }
+}
