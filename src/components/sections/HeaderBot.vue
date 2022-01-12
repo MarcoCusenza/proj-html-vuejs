@@ -6,30 +6,18 @@
         src="../../assets/img/nexgen-logo.svg"
         alt="Nexgen logo"
       />
-      <ul class="navbar">
-        <li v-for="(item, i) in nav" :key="i">
-          <a href="#">{{ item }}</a>
-        </li>
-      </ul>
+      <Navbar />
     </div>
   </div>
 </template>
 
 <script>
+import Navbar from "../commons/Navbar.vue";
+
 export default {
   name: "HeaderBot",
-  data() {
-    return {
-      nav: [
-        "home",
-        "about",
-        "services",
-        "process",
-        "team",
-        "blog",
-        "get in touch",
-      ],
-    };
+  components:{
+    Navbar,
   },
 };
 </script>
@@ -38,37 +26,21 @@ export default {
 @import "../../assets/style/partials/variables.scss";
 
 .header-bot {
-  padding: 20px 0;
-  background-color: $bg-light;
+  background-color: rgba(255, 255, 255, 0);
   color: $text-dark;
 
   .container {
+    width: 1050px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 0;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
 
     img {
       width: 110px;
-    }
-
-    ul {
-      display: flex;
-      align-items: center;
-      list-style: none;
-      text-transform: uppercase;
-
-      li {
-        margin: 0 15px;
-        font-size: .93rem;
-        font-weight: 500;
-
-        &:last-of-type {
-          background-color: $primary;
-          color: $text-light;
-          padding: 10px 20px;
-          border-radius: 4px;
-        }
-      }
     }
   }
 }

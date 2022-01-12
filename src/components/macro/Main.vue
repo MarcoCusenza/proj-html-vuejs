@@ -1,12 +1,17 @@
 <template>
   <main>
-    <div class="container"></div>
+    <Consulting />
   </main>
 </template>
 
 <script>
+import Consulting from "../sections/Consulting.vue";
+
 export default {
   name: "Main",
+  components: {
+    Consulting,
+  },
 };
 </script>
 
