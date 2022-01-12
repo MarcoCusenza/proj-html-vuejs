@@ -6,9 +6,15 @@
         <span class="floatleft">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, fuga
           atque dignissimos hic non illum ducimus totam praesentium ex labore
-          maiores amet alias quasi nobis sapiente?</span
+          maiores amet hic non totam alias adipisicing elit quasi
+          nobis sapiente?</span
         >
         <button class="but but-full floatright">see all</button>
+      </div>
+      <div class="box">
+        <div class="card" v-for="(card, i) in cardsData" :key="i">
+          <CardSimple :className="'card-services'" :obj="card" />
+        </div>
       </div>
     </div>
   </div>
@@ -16,11 +22,13 @@
 
 <script>
 import SectionTitle from "../commons/SectionTitle.vue";
+import CardSimple from "../commons/CardSimple.vue";
 
 export default {
   name: "Services",
   components: {
     SectionTitle,
+    CardSimple,
   },
   data() {
     return {
@@ -30,6 +38,39 @@ export default {
         title: "Excellence in",
         hafter: "Services",
         subtitle: "",
+        darkness: "light",
+      },
+      cardsData: {
+        card01: {
+          logo: "fas fa-network-wired",
+          title: "Audit & Assurance",
+          subtitle: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+        },
+        card02: {
+          logo: "fas fa-briefcase",
+          title: "Financial Advisory",
+          subtitle: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+        },
+        card03: {
+          logo: "fas fa-poll",
+          title: "Analytics and M&A",
+          subtitle: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+        },
+        card04: {
+          logo: "fas fa-plane",
+          title: "Middle Marketing",
+          subtitle: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+        },
+        card05: {
+          logo: "fas fa-globe-europe",
+          title: "Legal Consulting",
+          subtitle: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+        },
+        card06: {
+          logo: "fas fa-inbox",
+          title: "Regulatory Risk",
+          subtitle: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+        },
       },
     };
   },
@@ -38,20 +79,34 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../assets/style/partials/variables.scss";
-@import "../../assets/style/mixins/mixin.scss";
+@import "../../assets/style/mixins/card.scss";
+@import "../../assets/style/mixins/button.scss";
 
 @include button;
 @include cardServices;
 
 .services {
   background-color: $bg-lightgreen;
-  padding: 140px 0;
+  padding: 120px 0;
 
   .container {
     .top {
       width: 100%;
       span {
-        width: 85%;
+        width: 80%;
+        font-size: $fs-subtitle;
+      }
+    }
+    .box {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      margin-top: 20px;
+
+      .card {
+        margin: 20px 20px;
+        background-color: $bg-lightest;
+        padding: 10px;
+        border-radius: 10px;
       }
     }
   }

@@ -1,0 +1,31 @@
+@mixin button {
+  .but {
+    padding: 10px 20px;
+    font-family: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid $primary;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .but-full {
+    background-color: $primary;
+    color: $text-light;
+
+    &:hover {
+      background-color: $primary-hover;
+      border-color: $primary-hover;
+    }
+  }
+
+  .but-empty {
+    background-color: transparent;
+    color: $primary;
+
+    &:hover {
+      background-color: $primary-hover;
+      border-color: $primary-hover;
+    }
+  }
+}

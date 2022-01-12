@@ -12,7 +12,7 @@ COMMONS
 
 .container {
   max-width: 1000px;
-  min-width: 900px;
+  min-width: 1000px;
   margin: 0 auto;
 }
 
@@ -29,43 +29,55 @@ a {
   text-decoration: none;
 }
 
+
+// DARK / LIGHT SECTIONS
 .dark-section {
   background-color: $bg-darker;
+  color: $text-light-low-contrast;
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
+  h1, h2, h3, h4, h5 {
     color: $text-light;
   }
 
-  color: $text-light-low-contrast;
+  .title-header {
+    color: $primary-light;
+  }
+
+  .icons {
+    color: $primary-light;
+  }
 }
 
 .light-section {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
+  background-color: #ffffff; 
+  color: $text-dark-low-contrast;
+
+  h1, h2, h3, h4, h5 {
     color: $text-dark;
   }
 
-  color: $text-dark-low-contrast;
+  .title-header {
+    color: $primary-light;
+  }
+
+  .icons {
+    color: $primary-light;
+  }
 }
 
-.clearfix::after{
+
+//FLOAT CLASS
+.clearfix::after {
   display: table;
   content: "";
   clear: both;
 }
 
-.floatleft{
+.floatleft {
   float: left;
 }
 
-.floatright{
+.floatright {
   float: right;
 }
 
@@ -81,7 +93,5 @@ HEADER:
 CONSULTING:
 -schiarire la freccia del select
 -sistemare il dropdown del select
-
-
-
+-sistemare bottoni
 */

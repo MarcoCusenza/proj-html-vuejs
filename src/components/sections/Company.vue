@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import CardSimple from "../commons/CardSimple.vue";
 import SectionTitle from "../commons/SectionTitle.vue";
+import CardSimple from "../commons/CardSimple.vue";
 
 export default {
   name: "Company",
@@ -39,24 +39,25 @@ export default {
         hafter: "",
         subtitle:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, fuga atque dignissimos hic non illum ducimus totam praesentium voluptate magni molestiae impedit ex labore maiores amet alias quasi nobis sapiente?",
+        darkness: "dark",
       },
       cardsData: {
-        card1: {
+        card01: {
           logo: "fas fa-award",
           title: "Tradition",
           subtitle: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
         },
-        card2: {
+        card02: {
           logo: "fas fa-lock",
           title: "Security",
           subtitle: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
         },
-        card3: {
+        card03: {
           logo: "fas fa-edit",
           title: "Certificate",
           subtitle: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
         },
-        card4: {
+        card04: {
           logo: "fas fa-graduation-cap",
           title: "Expertise",
           subtitle: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
@@ -71,19 +72,19 @@ export default {
 @import "../../assets/style/partials/variables.scss";
 
 .company {
-  padding: 100px;
+  padding: 140px 0;
   .container {
     display: grid;
     grid-template-columns: 50% 50%;
 
     .box {
       .text {
-        font-size: 0.875rem;
+        font-size: $fs-subtitle;
         color: $text-light-low-contrast;
         margin-top: 20px;
       }
 
-      &:first-of-type{
+      &:first-of-type {
         width: 80%;
       }
 

@@ -1,10 +1,14 @@
 <template>
   <div class="title-box">
-    <h5>{{ obj.titleHeader }}</h5>
+    <h5 class="title-header">{{ obj.titleHeader }}</h5>
     <div class="title">
-      <h2 class="hbefore" v-if="obj.hbefore">{{ obj.hbefore }}</h2>
+      <h2 class="hbefore" :class="obj.darkness" v-if="obj.hbefore">
+        {{ obj.hbefore }}
+      </h2>
       <h2 class="middle">{{ obj.title }}</h2>
-      <h2 class="hafter" v-if="obj.hafter">{{ obj.hafter }}</h2>
+      <h2 class="hafter" :class="obj.darkness" v-if="obj.hafter">
+        {{ obj.hafter }}
+      </h2>
     </div>
     <div class="subtitle">{{ obj.subtitle }}</div>
   </div>
@@ -24,28 +28,31 @@ export default {
 .title-box {
   h5 {
     text-transform: uppercase;
-    color: $primary-light;
-    font-size: 0.8rem;
+    font-size: $fs-title-header;
   }
   .title {
     display: flex;
     h2 {
-      font-size: 2.5rem;
+      font-size: $fs-title;
       font-weight: 800;
       margin: 20px 0;
-    }
 
-    .middle {
-      &:before,
-      &:after {
-        content: "\00A0";
+      &.middle {
+        &:before,
+        &:after {
+          content: "\00A0";
+        }
       }
-    }
 
-    .hbefore,
-    .hafter {
-      background-color: $primary-highlight;
-      padding: 0 12px;
+      &.hbefore,
+      &.hafter {
+        background-color: $primary-highlight;
+        padding: 0 12px;
+
+        &.light {
+          color: $primary;
+        }
+      }
     }
   }
   .subtitle {

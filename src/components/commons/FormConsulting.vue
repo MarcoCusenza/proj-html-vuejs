@@ -29,7 +29,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../assets/style/partials/variables.scss";
-@import "../../assets/style/mixins/mixin.scss";
+@import "../../assets/style/mixins/button.scss";
 
 @include button;
 
