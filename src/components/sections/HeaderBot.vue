@@ -35,9 +35,10 @@ export default {
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
-    position: fixed;
+    position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
+    z-index: 999;
 
     img {
       width: 110px;

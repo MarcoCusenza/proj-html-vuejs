@@ -28,7 +28,6 @@ export default {
   background-position: bottom;
   background-size: cover;
   position: relative;
-  z-index: -1;
 
   .box-form {
     width: 500px;

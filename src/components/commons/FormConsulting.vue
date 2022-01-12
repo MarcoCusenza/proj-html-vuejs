@@ -46,6 +46,11 @@ form {
       font-size: 14px;
       font-family: inherit;
       background-color: $bg-input;
+
+      &:focus {
+        outline: none;
+        border: 2px solid $primary;
+      }
     }
     select {
       width: 95%;
@@ -73,7 +78,6 @@ form {
         font-family: inherit;
         background-color: #d5d6d8;
         font-size: 16px;
-        cursor: pointer;
       }
     }
   }

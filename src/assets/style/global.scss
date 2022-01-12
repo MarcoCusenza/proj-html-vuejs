@@ -11,7 +11,7 @@ COMMONS
 }
 
 .container{
-  max-width: 1050px;
+  max-width: 1000px;
   min-width: 900px;
   margin: 0 auto;
 }
@@ -23,6 +23,11 @@ h1, h2, h3, h4, h5{
 a{
   color: inherit;
   text-decoration: none;
+}
+
+.dark-section{
+  background-color: $bg-darker;
+  color: $text-light;
 }
 
 
