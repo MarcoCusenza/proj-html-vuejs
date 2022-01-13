@@ -14,8 +14,9 @@
     color: $text-light;
 
     &:hover {
-      background-color: $primary-hover;
-      border-color: $primary-hover;
+      background-color: $primary-hover-dark;
+      border-color: $primary-hover-dark;
+      transition: .2s;
     }
   }
 
@@ -24,8 +25,9 @@
     color: $primary;
 
     &:hover {
-      background-color: $primary-hover;
-      border-color: $primary-hover;
+      background-color: $primary-hover-light;
+      border-color: $primary-hover-light;
+      transition: .2s;
     }
   }
 }

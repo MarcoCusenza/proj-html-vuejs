@@ -44,15 +44,20 @@ ul {
       transition: 0.2s;
     }
 
+    a:last-of-type:hover{
+      color: $text-light;
+    }
+
     &:last-of-type {
       background-color: $primary;
       color: $text-light;
       padding: 10px 20px;
       border-radius: 4px;
       margin-right: 0;
+      cursor: pointer;
 
       &:hover{
-        background-color: $primary-hover;
+        background-color: $primary-hover-dark;
         transition: 0.2s;
       }
     }
