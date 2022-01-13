@@ -48,11 +48,9 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../assets/style/partials/variables.scss";
-@import "../../assets/style/mixins/card.scss";
 @import "../../assets/style/mixins/button.scss";
 
 @include button;
-@include cardServices;
 
 .news {
   background-color: $bg-lightest;

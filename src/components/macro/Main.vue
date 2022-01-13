@@ -6,6 +6,7 @@
     <Process />
     <Team />
     <News />
+    <Newsletter />
   </main>
 </template>
 
@@ -16,6 +17,7 @@ import Services from "../sections/Services.vue";
 import Process from "../sections/Process.vue";
 import Team from "../sections/Team.vue";
 import News from "../sections/News.vue";
+import Newsletter from "../sections/Newsletter.vue";
 
 export default {
   name: "Main",
@@ -26,6 +28,7 @@ export default {
     Process,
     Team,
     News,
+    Newsletter,
   },
 };
 </script>
