@@ -29,8 +29,10 @@
           <div class="card">
             <h3>{{ card.title }}</h3>
             <div class="voice" v-for="(voice, i) in card.voices" :key="i">
-              <i class="fas fa-chevron-right"></i>
-              <span>{{ voice }}</span>
+              <a href="#">
+                <i class="fas fa-chevron-right"></i>
+                <span>{{ voice }}</span>
+              </a>
             </div>
           </div>
         </div>
@@ -112,8 +114,8 @@ export default {
         width: 90%;
       }
 
-      .contact{
-        span{
+      .contact {
+        span {
           margin-left: 10px;
         }
       }

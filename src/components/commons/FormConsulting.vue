@@ -43,8 +43,8 @@ form {
     input {
       width: 95%;
       height: 80%;
-      padding: 12px;
-      border: none;
+      padding: 10px;
+      border: 2px solid transparent;
       border-radius: 4px;
       font-size: 14px;
       font-family: inherit;
