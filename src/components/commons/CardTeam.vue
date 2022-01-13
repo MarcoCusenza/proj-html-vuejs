@@ -48,7 +48,7 @@ export default {
   }
   .social {
     display: flex;
-    margin-top: 20px ;
+    margin-top: 20px;
 
     .box-logo {
       height: 35px;
@@ -58,6 +58,11 @@ export default {
       border-radius: 50%;
       text-align: center;
       line-height: 35px;
+
+      &:hover {
+        background-color: $primary-hover-light;
+        transition: 0.2s;
+      }
 
       a {
         color: $primary;
