@@ -118,6 +118,9 @@ export default {
         span {
           margin-left: 10px;
         }
+        &:hover {
+          color: $text-light;
+        }
       }
 
       button {
@@ -141,6 +144,10 @@ export default {
 
         .voice {
           line-height: 30px;
+
+          &:hover {
+            color: $text-light;
+          }
 
           span {
             margin-left: 10px;
