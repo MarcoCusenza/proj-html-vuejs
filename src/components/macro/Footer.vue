@@ -1,12 +1,20 @@
 <template>
   <footer>
-    <div class="container"></div>
+    <FooterTop />
+    <FooterBot />
   </footer>
 </template>
 
 <script>
+import FooterTop from "../sections/FooterTop.vue";
+import FooterBot from "../sections/FooterBot.vue";
+
 export default {
   name: "Footer",
+  components:{
+    FooterTop,
+    FooterBot,
+  }
 };
 </script>
 
