@@ -74,6 +74,11 @@ export default {
       }
       & > * {
         margin-left: 30px;
+
+        &:hover{
+          color: $text-light;
+          transition: .2s;
+        }
       }
     }
   }

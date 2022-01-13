@@ -39,12 +39,22 @@ ul {
     font-size: 0.9375rem;
     font-weight: 500;
 
+    a:hover {
+      color: $text-dark-low-contrast;
+      transition: 0.2s;
+    }
+
     &:last-of-type {
       background-color: $primary;
       color: $text-light;
       padding: 10px 20px;
       border-radius: 4px;
       margin-right: 0;
+
+      &:hover{
+        background-color: $primary-hover;
+        transition: 0.2s;
+      }
     }
   }
 }
