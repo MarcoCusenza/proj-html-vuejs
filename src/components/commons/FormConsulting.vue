@@ -35,14 +35,14 @@ export default {
 
 form {
   .inputs {
-    height: 110px;
+    height: 130px;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 40% 40%;
+    row-gap: 10%;
+    column-gap: 3%;
 
     input {
-      width: 95%;
-      height: 80%;
       padding: 10px;
       border: 2px solid transparent;
       border-radius: 4px;
@@ -56,8 +56,6 @@ form {
       }
     }
     select {
-      width: 95%;
-      height: 80%;
       padding: 12px;
       border: none;
       border-radius: 4px;
@@ -84,7 +82,7 @@ form {
       }
     }
   }
-  button {
+  button {   
     &:first-of-type {
       margin-right: 15px;
     }

@@ -49,7 +49,7 @@ export default {
         font-weight: 900;
         line-height: 70px;
         color: $text-dark;
-        margin: 20px 0;
+        margin: 10px 0 30px 0;
       }
     }
   }
