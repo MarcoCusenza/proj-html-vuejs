@@ -5,6 +5,7 @@
     <Services />
     <Process />
     <Team />
+    <News />
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import Company from "../sections/Company.vue";
 import Services from "../sections/Services.vue";
 import Process from "../sections/Process.vue";
 import Team from "../sections/Team.vue";
+import News from "../sections/News.vue";
 
 export default {
   name: "Main",
@@ -23,6 +25,7 @@ export default {
     Services,
     Process,
     Team,
+    News,
   },
 };
 </script>

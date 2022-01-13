@@ -6,8 +6,8 @@
         <span class="floatleft">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, fuga
           atque dignissimos hic non illum ducimus totam praesentium ex labore
-          maiores amet hic non totam alias adipisicing elit quasi
-          nobis sapiente?</span
+          maiores amet hic non totam alias adipisicing elit quasi nobis
+          sapiente?</span
         >
         <button class="but but-full floatright">see all</button>
       </div>
@@ -99,11 +99,12 @@ export default {
     }
     .box {
       display: grid;
-      grid-template-columns: 33% 33% 33%;
+      grid-template-columns: 31.3% 31.3% 31.3%;
+      column-gap: 3%;
+      row-gap: 8%;
       margin-top: 20px;
 
       .card {
-        margin: 20px 20px;
         background-color: $bg-lightest;
         padding: 10px;
         border-radius: 10px;

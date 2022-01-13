@@ -5,7 +5,11 @@
       <h2 class="hbefore" :class="obj.darkness" v-if="obj.hbefore">
         {{ obj.hbefore }}
       </h2>
-      <h2 class="middle">{{ obj.title }}</h2>
+      <h2 class="middle">
+        <span v-if="obj.hbefore">&#160;</span>
+        {{ obj.title }}
+        <span v-if="obj.hafter">&#160;</span>
+      </h2>
       <h2 class="hafter" :class="obj.darkness" v-if="obj.hafter">
         {{ obj.hafter }}
       </h2>
@@ -37,12 +41,12 @@ export default {
       font-weight: 800;
       margin: 20px 0;
 
-      &.middle {
-        &:before,
-        &:after {
-          content: "\00A0";
-        }
-      }
+      // &.middle {
+      //   &:before,
+      //   &:after {
+      //     content: "\00A0";
+      //   }
+      // }
 
       &.hbefore,
       &.hafter {
