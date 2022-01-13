@@ -12,7 +12,7 @@
         <button class="but but-full floatright">see all</button>
       </div>
       <div class="box">
-        <div class="card" v-for="(card, i) in cardsData" :key="i">
+        <div class="box-card" v-for="(card, i) in cardsData" :key="i">
           <CardSimple :className="'card-services'" :obj="card" />
         </div>
       </div>
@@ -104,10 +104,20 @@ export default {
       row-gap: 8%;
       margin-top: 20px;
 
-      .card {
+      .box-card {
         background-color: $bg-lightest;
         padding: 10px;
         border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $bg-lighter;
+          transition: 0.2s;
+        }
+
+        .card {
+          padding: 30px;
+        }
       }
     }
   }
