@@ -56,7 +56,7 @@ export default {
     }
   }
   .subtitle {
-    font-size: 0.875rem;
+    font-size: $fs-subtitle;
   }
 }
 </style>

@@ -27,4 +27,5 @@ export default {
 
 @include cardCompany;
 @include cardServices;
+@include cardProcess;
 </style>
